@@ -1,15 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Grid, Typography, isWidthUp, withWidth } from "@material-ui/core";
-import CodeIcon from "@material-ui/icons/Code";
 import BuildIcon from "@material-ui/icons/Build";
 import ComputerIcon from "@material-ui/icons/Computer";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import HeadsetMicIcon from "@material-ui/icons/HeadsetMic";
 import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
-import CloudIcon from "@material-ui/icons/Cloud";
 import MeassageIcon from "@material-ui/icons/Message";
-import CancelIcon from "@material-ui/icons/Cancel";
 import calculateSpacing from "./calculateSpacing";
 import FeatureCard from "./FeatureCard";
 
@@ -69,33 +66,6 @@ const features = [
     icon: <HeadsetMicIcon style={{ fontSize: iconSize }} />,
     mdDelay: "400",
     smDelay: "200"
-  },
-  {
-    color: "#304FFE",
-    headline: "Cloud Storage",
-    text:
-      "Your files are backed up automatically and stored securely, so you can reach them from anywhere.",
-    icon: <CloudIcon style={{ fontSize: iconSize }} />,
-    mdDelay: "0",
-    smDelay: "0"
-  },
-  {
-    color: "#C51162",
-    headline: "Developer API",
-    text:
-      "Connect your favorite tools and build custom workflows with a flexible, well-documented API.",
-    icon: <CodeIcon style={{ fontSize: iconSize }} />,
-    mdDelay: "200",
-    smDelay: "200"
-  },
-  {
-    color: "#00B8D4",
-    headline: "Cancel Anytime",
-    text:
-      "No contracts and no hidden fees. Change your plan or cancel whenever you like, with no questions asked.",
-    icon: <CancelIcon style={{ fontSize: iconSize }} />,
-    mdDelay: "400",
-    smDelay: "0"
   }
 ];
 
