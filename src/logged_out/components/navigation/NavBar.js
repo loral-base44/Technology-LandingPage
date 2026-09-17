@@ -83,7 +83,7 @@ function NavBar(props) {
               display="inline"
               color="secondary"
             >
-              LandingPage Template
+              Service for your team
             </Typography>
           </div>
           <div>
