@@ -140,6 +140,31 @@ function PricingSection(props) {
               features={["Feature 1", "Feature 2", "Feature 3"]}
             />
           </Grid>
+          <Grid
+            item
+            className={classes.cardWrapper}
+            xs={12}
+            sm={6}
+            lg={3}
+            data-aos="zoom-in-up"
+            data-aos-delay={isWidthUp("md", width) ? "800" : "400"}
+          >
+            <PriceCard
+              title="Enterprise"
+              pricing={
+                <span>
+                  $199.99
+                  <Typography display="inline"> / month</Typography>
+                </span>
+              }
+              features={[
+                "Everything in Starter",
+                "Everything in Premium",
+                "Everything in Business",
+                "Everything in Tycoon"
+              ]}
+            />
+          </Grid>
         </Grid>
       </div>
     </div>
