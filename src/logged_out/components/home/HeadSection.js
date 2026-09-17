@@ -130,8 +130,7 @@ function HeadSection(props) {
                         <Typography
                           variant={isWidthUp("lg", width) ? "h3" : "h4"}
                         >
-                          Free Template for building a WebPage using
-                          Material-UI
+                          Everything your team needs in one place
                         </Typography>
                       </Box>
                       <div>
