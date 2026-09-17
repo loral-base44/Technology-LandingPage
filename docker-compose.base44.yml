@@ -1,0 +1,16 @@
+services:
+  web:
+    image: node:16
+    working_dir: /app
+    command: sh -c "npm install --no-audit --no-fund && npm start"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3000
+      - DANGEROUSLY_DISABLE_HOST_CHECK=true
+      - WDS_SOCKET_PORT=0
+      - CHOKIDAR_USEPOLLING=true
+      - BROWSER=none
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
