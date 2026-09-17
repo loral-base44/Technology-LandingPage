@@ -139,8 +139,8 @@ function HeadSection(props) {
                             variant={isWidthUp("lg", width) ? "h6" : "body1"}
                             color="textSecondary"
                           >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt
+                            Simple tools to plan, track, and get work done
+                            together
                           </Typography>
                         </Box>
                         <Button
