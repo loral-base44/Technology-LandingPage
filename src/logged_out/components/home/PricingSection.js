@@ -34,6 +34,10 @@ const styles = theme => ({
       marginLeft: "auto",
       marginRight: "auto",
       maxWidth: 340
+    },
+    [theme.breakpoints.up("lg")]: {
+      flexBasis: "20%",
+      maxWidth: "20%"
     }
   },
   cardWrapperHighlighted: {
@@ -41,6 +45,10 @@ const styles = theme => ({
       marginLeft: "auto",
       marginRight: "auto",
       maxWidth: 360
+    },
+    [theme.breakpoints.up("lg")]: {
+      flexBasis: "20%",
+      maxWidth: "20%"
     }
   }
 });
@@ -62,7 +70,6 @@ function PricingSection(props) {
             item
             xs={12}
             sm={6}
-            lg={3}
             className={classes.cardWrapper}
             data-aos="zoom-in-up"
           >
@@ -82,7 +89,6 @@ function PricingSection(props) {
             className={classes.cardWrapperHighlighted}
             xs={12}
             sm={6}
-            lg={3}
             data-aos="zoom-in-up"
             data-aos-delay="200"
             square={true}
@@ -105,7 +111,6 @@ function PricingSection(props) {
             className={classes.cardWrapper}
             xs={12}
             sm={6}
-            lg={3}
             data-aos="zoom-in-up"
             data-aos-delay={isWidthUp("md", width) ? "400" : "0"}
           >
@@ -125,7 +130,6 @@ function PricingSection(props) {
             className={classes.cardWrapper}
             xs={12}
             sm={6}
-            lg={3}
             data-aos="zoom-in-up"
             data-aos-delay={isWidthUp("md", width) ? "600" : "200"}
           >
@@ -138,6 +142,25 @@ function PricingSection(props) {
                 </span>
               }
               features={["Feature 1", "Feature 2", "Feature 3"]}
+            />
+          </Grid>
+          <Grid
+            item
+            className={classes.cardWrapper}
+            xs={12}
+            sm={6}
+            data-aos="zoom-in-up"
+            data-aos-delay={isWidthUp("md", width) ? "800" : "400"}
+          >
+            <PriceCard
+              title="Enterprise"
+              pricing={
+                <span>
+                  $199.99
+                  <Typography display="inline"> / month</Typography>
+                </span>
+              }
+              features={["All features"]}
             />
           </Grid>
         </Grid>
