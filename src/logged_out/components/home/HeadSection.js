@@ -140,7 +140,8 @@ function HeadSection(props) {
                             color="textSecondary"
                           >
                             Simple tools to plan, track, and get work done
-                            together
+                            together, no matter where your team is or how
+                            they like to work
                           </Typography>
                         </Box>
                         <Button
