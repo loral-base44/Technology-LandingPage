@@ -149,9 +149,8 @@ function HeadSection(props) {
                           fullWidth
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://github.com/wonderfullandingpage/Technology-LandingPage"
                         >
-                          Download from GitHub
+                          BOOK A DEMO
                         </Button>
                       </div>
                     </Box>
